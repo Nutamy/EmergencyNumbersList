@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Экстренные номера</string>
+    <string name="ambulance">Скорая помощь</string>
+    <string name="police">Полиция</string>
+    <string name="fireDepartment">Пожарные</string>
+    <string name="emergency">Служба спасения</string>
+    <string name="manualEmergencyPhones">Справочник экстренных телефонов</string>
+    <string name="exNumber101">101</string>
+    <string name="exNumber102">102</string>
+    <string name="exNumber103">103</string>
+    <string name="exNumber104">104</string>
+    <string name="exNumber112">112</string>
+    <string name="gasService">Служба газа</string>
+    <string name="back">На главную</string>
+</resources>

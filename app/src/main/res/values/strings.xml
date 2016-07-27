@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Emergency Numbers</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="police">Police</string>
+    <string name="fireDepartment">Fire Department</string>
+    <string name="emergency">Emergency</string>
+    <string name="manualEmergencyPhones">Manual emergency phones</string>
+    <string name="exNumber101">101</string>
+    <string name="exNumber102">102</string>
+    <string name="exNumber103">103</string>
+    <string name="exNumber104">104</string>
+    <string name="exNumber112">112</string>
+    <string name="gasService">Gas service</string>
+    <string name="back">Back</string>
+</resources>

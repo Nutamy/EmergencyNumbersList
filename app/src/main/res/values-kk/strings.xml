@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Төтенше нөмірлері</string>
+    <string name="ambulance">Жедел жәрдем</string>
+    <string name="police">Полициясы</string>
+    <string name="fireDepartment">өрт сөндірудің кезекші қызметі</string>
+    <string name="emergency">құтқару</string>
+    <string name="manualEmergencyPhones">Төтенше анықтама</string>
+    <string name="exNumber101">101</string>
+    <string name="exNumber102">102</string>
+    <string name="exNumber103">103</string>
+    <string name="exNumber104">104</string>
+    <string name="exNumber112">112</string>
+    <string name="gasService">газ қызметі</string>
+    <string name="back">Бұрын</string>
+</resources>
