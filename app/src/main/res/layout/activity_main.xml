@@ -9,114 +9,160 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kz.smartfrog.emergencynumbers.MainActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
         <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exNumber101"
-                android:id="@+id/button101"
-                android:layout_gravity="center"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/fireDepartment"
-                android:id="@+id/textView101"
-                android:gravity="center"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView101"
+                            android:src="@drawable/f101"
+                            android:layout_gravity="center" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exNumber104"
-                android:id="@+id/button104"
-                android:layout_gravity="center"/>
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton101"
+                            android:background="#0277BD"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@android:drawable/sym_call_outgoing" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/gasService"
-                android:id="@+id/textView104"
-                android:gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fireDepartment"
+                            android:id="@+id/textView101"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView104"
+                            android:src="@drawable/f104"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton104"
+                            android:background="#0277BD"
+                            android:src="@android:drawable/sym_call_outgoing"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gasService"
+                            android:id="@+id/textView104"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView102"
+                            android:src="@drawable/f102"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton102"
+                            android:background="#0277BD"
+                            android:src="@android:drawable/sym_call_outgoing"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/police"
+                            android:id="@+id/textView102"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView112"
+                            android:src="@drawable/f112"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton112"
+                            android:background="#0277BD"
+                            android:src="@android:drawable/sym_call_outgoing"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/emergency"
+                            android:id="@+id/textView112"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageView103"
+                            android:src="@drawable/f103"
+                            android:layout_gravity="center" />
+
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imageButton103"
+                            android:background="#0277BD"
+                            android:src="@android:drawable/sym_call_outgoing"
+                            android:layout_gravity="center_horizontal" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/ambulance"
+                            android:id="@+id/textView103"
+                            android:gravity="center"
+                            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+                </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:orientation="vertical"
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exNumber102"
-                android:id="@+id/button102"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/police"
-                android:id="@+id/textView102"
-                android:gravity="center"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exNumber112"
-                android:id="@+id/button112"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/emergency"
-                android:id="@+id/textView112"
-                android:gravity="center"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/exNumber103"
-                android:id="@+id/button103"
-                android:layout_gravity="center"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/ambulance"
-                android:id="@+id/textView103"
-                android:gravity="center"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/manualEmergencyPhones"
-        android:id="@+id/buttonManualEmergPhones"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_gravity="center"/>
+            android:layout_height="wrap_content"
+            android:text="@string/manualEmergencyPhones"
+            android:id="@+id/buttonManualEmergPhones"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"/>
 </RelativeLayout>
