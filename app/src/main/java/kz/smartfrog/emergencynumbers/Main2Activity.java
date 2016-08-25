@@ -12,7 +12,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.backendless.Backendless;
 import com.backendless.BackendlessCollection;
@@ -115,7 +114,6 @@ public class Main2Activity extends AppCompatActivity {
                     //  listViewEmergencyPhones.getAdapter().
 
                     ArrayAdapter<String> adapterOrganisationPhones = new ArrayAdapter<>(Main2Activity.this, R.layout.listview, R.id.textViewInListView, textlist);
-
                     listViewEmergencyPhones.setAdapter(adapterOrganisationPhones);
 
 
@@ -125,6 +123,21 @@ public class Main2Activity extends AppCompatActivity {
                     }
                     editor.putString("key", savedBasePhones);
                     editor.commit();
+
+                    listViewEmergencyPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                            Log.d("TAG1", "Is it working?");
+                            int position  = i;
+                            Intent call = new Intent(Intent.ACTION_DIAL);
+
+                            call.setData(Uri.parse("tel:" + companiesList.get(position).getPhoneNumber()));
+                            Log.d("TAG1", "tel:" + companiesList.get(position).getPhoneNumber());
+                            startActivity(call);
+
+                        }
+                    });
+
                 }   // all Contact instances have been found
 
                 @Override
