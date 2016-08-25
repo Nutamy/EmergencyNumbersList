@@ -127,12 +127,10 @@ public class Main2Activity extends AppCompatActivity {
                     listViewEmergencyPhones.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                            Log.d("TAG1", "Is it working?");
                             int position  = i;
                             Intent call = new Intent(Intent.ACTION_DIAL);
 
                             call.setData(Uri.parse("tel:" + companiesList.get(position).getPhoneNumber()));
-                            Log.d("TAG1", "tel:" + companiesList.get(position).getPhoneNumber());
                             startActivity(call);
 
                         }
