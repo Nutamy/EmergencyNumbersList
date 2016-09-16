@@ -80,80 +80,150 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        View.OnClickListener call101 = new View.OnClickListener() {
+        View.OnClickListener callTo = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:101"));
+                switch (view.getId()) {
+                    case R.id.imageButton101:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:101"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 101");
+                    break;
 
-                Log.d("TAG", intentCall.getData().toString());
-                startActivity(intentCall);
-                Log.d("TAG", "call 101");
+                    case R.id.imageView101:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:101"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 101");
+                        break;
+
+                    case R.id.textView101:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:101"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 101");
+                        break;
+
+                    case R.id.imageButton102:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:102"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 102");
+                        break;
+
+                    case R.id.imageView102:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:102"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 102");
+                        break;
+
+                    case R.id.textView102:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:102"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 102");
+                        break;
+
+                    case R.id.imageButton103:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:103"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 103");
+                        break;
+
+                    case R.id.imageView103:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:103"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 103");
+                        break;
+
+                    case R.id.textView103:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:103"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 103");
+                        break;
+
+                    case R.id.imageButton104:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:104"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 104");
+                        break;
+
+                    case R.id.imageView104:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:104"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 104");
+                        break;
+
+                    case R.id.textView104:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:104"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 104");
+                        break;
+
+                    case R.id.imageButton112:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:112"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 112");
+                        break;
+
+                    case R.id.imageView112:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:112"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 112");
+                        break;
+
+                    case R.id.textView112:
+                        intentCall = new Intent(Intent.ACTION_DIAL);
+                        intentCall.setData(Uri.parse("tel:112"));
+                        Log.d("TAG", intentCall.getData().toString());
+                        startActivity(intentCall);
+                        Log.d("TAG", "call 112");
+                        break;
+                }
             }
         };
 
-        exNumber101.setOnClickListener(call101);
-        imageView101.setOnClickListener(call101);
-
-        View.OnClickListener call102 = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:102"));
-
-                Log.d("TAG", intentCall.getData().toString());
-                startActivity(intentCall);
-                Log.d("TAG", "call 102");
-            }
-        };
-
-        exNumber102.setOnClickListener(call102);
-        imageView102.setOnClickListener(call102);
-
-        View.OnClickListener call103 = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:103"));
-
-                Log.d("TAG", intentCall.getData().toString());
-                startActivity(intentCall);
-                Log.d("TAG", "call 103");
-            }
-        };
-
-        exNumber103.setOnClickListener(call103);
-        imageView103.setOnClickListener(call103);
+        exNumber101.setOnClickListener(callTo);
+        exNumber102.setOnClickListener(callTo);
+        exNumber103.setOnClickListener(callTo);
+        exNumber104.setOnClickListener(callTo);
+        exNumber112.setOnClickListener(callTo);
+        imageView101.setOnClickListener(callTo);
+        imageView102.setOnClickListener(callTo);
+        imageView103.setOnClickListener(callTo);
+        imageView104.setOnClickListener(callTo);
+        imageView112.setOnClickListener(callTo);
+        textView101.setOnClickListener(callTo);
+        textView102.setOnClickListener(callTo);
+        textView103.setOnClickListener(callTo);
+        textView104.setOnClickListener(callTo);
+        textView112.setOnClickListener(callTo);
 
 
-        View.OnClickListener call104 = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:104"));
-
-                Log.d("TAG", intentCall.getData().toString());
-                startActivity(intentCall);
-                Log.d("TAG", "call 104");
-            }
-        };
-
-        exNumber104.setOnClickListener(call104);
-        imageView104.setOnClickListener(call104);
-
-        View.OnClickListener call112 = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                intentCall = new Intent(Intent.ACTION_DIAL);
-                intentCall.setData(Uri.parse("tel:112"));
-                Log.d("TAG", intentCall.getData().toString());
-                startActivity(intentCall);
-                Log.d("TAG", "call 112");
-            }
-        };
-
-        exNumber112.setOnClickListener(call112);
-        imageView112.setOnClickListener(call112);
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
